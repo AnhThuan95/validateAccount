@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="checkValidateAccount.js"></script>
+</head>
+<body>
+
+<script>
+    let text = "123abc_";
+    console.log(checkValidateAccount(text));
+
+    text = "_abc123";
+    console.log(checkValidateAccount(text));
+
+    text = "123456";
+    console.log(checkValidateAccount(text));
+
+    text = "______";
+    console.log(checkValidateAccount(text));
+
+    text = "abc";
+    console.log(checkValidateAccount(text));
+
+    text = "123";
+    console.log(checkValidateAccount(text));
+    text = "123abc@";
+    console.log(checkValidateAccount(text));
+</script>
+
+</body>
+</html>
